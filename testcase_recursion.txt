@@ -1,0 +1,14 @@
+<<<driver program>>>
+start
+
+end
+
+<<module recur>>
+takes input [x:integer];
+start	
+	x:=3;	
+	use module recur with parameters x;
+end
+
+**notice that this test case does not declare the module before the driver module, still it is syntactically correct
+as moduleDeclarations is optional. Testing whether a module is declared before usage is a matter of semantic analysis**
